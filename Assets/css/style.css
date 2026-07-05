@@ -153,10 +153,11 @@ body {
     align-items: center;
 }
 
-.profile-circle span {
-    font-size: 42px;
-    font-weight: bold;
-    color: #050816;
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .hero-card h3 {
