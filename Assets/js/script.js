@@ -5,13 +5,22 @@ menuBtn.addEventListener("click", function () {
     navMenu.classList.toggle("active");
 });
 
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+        navMenu.classList.remove("active");
+    });
+});
+
 const typingText = document.getElementById("typingText");
 
 const words = [
-    "AI-Driven Full Stack Developer",
-    "PHP & JavaScript Developer",
-    "Problem Solver",
-    "Future Software Engineer"
+    "Software Quality Assurance Engineer",
+    "Manual & API Testing Enthusiast",
+    "Python, C#, C/C++ Programmer",
+    "ML and NLP Learner",
+    "Software Requirements Engineering Learner"
 ];
 
 let wordIndex = 0;
@@ -40,7 +49,7 @@ function typeEffect() {
         wordIndex = (wordIndex + 1) % words.length;
     }
 
-    const speed = isDeleting ? 60 : 100;
+    const speed = isDeleting ? 55 : 95;
     setTimeout(typeEffect, speed);
 }
 
